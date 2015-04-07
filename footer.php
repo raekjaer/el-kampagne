@@ -40,6 +40,7 @@
 		$zerif_socials_linkedin = get_theme_mod('zerif_socials_linkedin','#');
 		$zerif_socials_behance = get_theme_mod('zerif_socials_behance','#');
 		$zerif_socials_dribbble = get_theme_mod('zerif_socials_dribbble','#');
+		$el_kampagne_socials_website = get_theme_mod('el_kampagne_socials_website','#');
 			
 		$zerif_copyright = get_theme_mod('zerif_copyright');
 
@@ -54,7 +55,7 @@
 		if(!empty($zerif_phone) || !empty($zerif_phone_icon)):
 			$footer_sections++;
 		endif;
-		if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || 
+		if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($el_kampagne_socials_website) || 
 		!empty($zerif_copyright)):
 			$footer_sections++;
 		endif;
@@ -106,11 +107,11 @@
 			echo '</div>';
 		endif;
 		
-		if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || 
+		if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($el_kampagne_socials_website) || 
 		!empty($zerif_copyright)):
 		
 					echo '<div class="'.$footer_class.' copyright">';
-					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble)):
+					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($el_kampagne_socials_website)):
 						echo '<ul class="social">';
 						
 						/* facebook */
@@ -133,6 +134,10 @@
 						if( !empty($zerif_socials_dribbble) ):
 							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_dribbble,'zerif-lite')).'"><i class="fa fa-dribbble"></i></a></li>';
 						endif;
+						/* dribbble */
+						if( !empty($el_kampagne_socials_website) ):
+							echo '<li><a target="_blank" href="'.esc_url(__($el_kampagne_socials_website,'el-kampagne')).'"><i class="fa fa-globe"></i></a></li>';
+						endif;
 						echo '</ul>';
 					endif;	
 			
@@ -141,7 +146,7 @@
 						echo esc_attr($zerif_copyright);
 					endif;
 					
-					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="https://themeisle.com/themes/zerif-lite/" target="_blank" rel="nofollow">EL kampagne </a>'.__('powered by','el-kampagne').'<a class="zerif-copyright" href="http://wordpress.org/" target="_blank" rel="nofollow"> WordPress</a> and <a class="zerif-copyright" href="https://themeisle.com/themes/zerif-lite/" target="_blank" rel="nofollow">Zerif Lite</a></div>';
+					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="https://github.com/raekjaer/el-kampagne" target="_blank" rel="nofollow">EL kampagne </a>'.__('powered by','el-kampagne').'<a class="zerif-copyright" href="http://wordpress.org/" target="_blank" rel="nofollow"> WordPress</a> '.__('and','el-kampagne').' <a class="zerif-copyright" href="https://themeisle.com/themes/zerif-lite/" target="_blank" rel="nofollow">Zerif Lite</a></div>';
 					
 					echo '</div>';
 			

@@ -370,6 +370,10 @@ msgstr ""
 msgid "powered by"
 msgstr "lavet med"
 
+#: footer.php:143
+msgid "and"
+msgstr "og"
+
 #: front-page.php:106
 msgid "* Please enter your name."
 msgstr "* Indtast dit navn."
