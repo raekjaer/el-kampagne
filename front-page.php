@@ -139,7 +139,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 			if(trim($_POST['myname']) === ''):
 
 
-				$nameError = __('* Please enter your name.','zerif-lite');
+				$nameError = __('* Please enter your name.','el-kampagne');
 
 
 				$hasError = true;
@@ -160,7 +160,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 			if(trim($_POST['myemail']) === ''):
 
 
-				$emailError = __('* Please enter your email address.','zerif-lite');
+				$emailError = __('* Please enter your email address.','el-kampagne');
 
 
 				$hasError = true;
@@ -169,7 +169,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 			elseif (!preg_match("/^[[:alnum:]][a-z0-9_.-]*@[a-z0-9.-]+\.[a-z]{2,4}$/i", trim($_POST['myemail']))) :
 
 
-				$emailError = __('* You entered an invalid email address.','zerif-lite');
+				$emailError = __('* You entered an invalid email address.','el-kampagne');
 
 
 				$hasError = true;
@@ -190,7 +190,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 			if(trim($_POST['mysubject']) === ''):
 
 
-				$subjectError = __('* Please enter a subject.','zerif-lite');
+				$subjectError = __('* Please enter a subject.','el-kampagne');
 
 
 				$hasError = true;
@@ -211,7 +211,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 			if(trim($_POST['mymessage']) === ''):
 
 
-				$messageError = __('* Please enter a message.','zerif-lite');
+				$messageError = __('* Please enter a message.','el-kampagne');
 
 
 				$hasError = true;
@@ -254,7 +254,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 						$subject = 'From '.$name;
 					endif;
 
-					$body = "Name: $name \n\nEmail: $email \n\n Subject: $subject \n\n Message: $message";
+					$body = "Navn: $name \n\nE-mail: $email \n\n Emne: $subject \n\n Besked: \n\n $message";
 
 
 					$headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
@@ -404,11 +404,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 						if(isset($emailSent) && $emailSent == true) :
 
-							echo '<p class="error white-text">'.__('Thanks, your email was sent successfully!','zerif-lite').'</p>';
+							echo '<p class="error white-text">'.__('Thanks, your email was sent successfully!','el-kampagne').'</p>';
 
 						elseif(isset($_POST['submitted'])):
 
-							echo '<p class="error white-text">'.__('Sorry, an error occured.','zerif-lite').'<p>';
+							echo '<p class="error white-text">'.__('Sorry, an error occured.','el-kampagne').'<p>';
 
 						endif;
 
