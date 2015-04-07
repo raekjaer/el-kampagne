@@ -149,7 +149,10 @@
 }
 
 
-
+.feedback-box .client-info .client-name {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
 
 .purchase-now {
   background: #c4163f;
