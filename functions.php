@@ -1,10 +1,17 @@
 <?php
 // Custom functions go here
 
-add_action( 'wp_enqueue_scripts', 'el_kampagne_enqueue_styles' );
-function el_kampagne_enqueue_styles() {
-  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('zerif_bootstrap_style') );
-  wp_enqueue_style( 'zerif-child-style', get_stylesheet_uri(), array('zerif_style'), 'v1' );
+add_action( 'wp_enqueue_scripts', 'el_kampagne_enqueue_scripts' );
+function el_kampagne_enqueue_scripts() {
+  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('zerif_bootstrap_style'), '20150409' );
+
+  wp_enqueue_script(
+    'el_kampagne-fonts',
+    'http://fast.fonts.net/jsapi/cacbb6f4-758c-47ad-9d9b-be4a1c3e9ee1.js',
+    false,
+    '20150409'
+  );
+
 }
 
 /**

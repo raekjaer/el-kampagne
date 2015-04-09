@@ -10,8 +10,14 @@
  Tags:          black, gray, red, white, one-column, two-columns, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
 */
 
-/* Red: #c4163f / rgb(196,22,63) */
-/* Green: #16c49c */
+
+
+body {
+  font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important;
+}
+h1, h2, .newsletter h3 {
+  font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
 
 /*---------------------------------------
  **   COLORS                         -----
@@ -150,8 +156,7 @@
 
 
 .feedback-box .client-info .client-name {
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
+  font-family: "Soho W02 Extra Light Italic","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
 .purchase-now {
