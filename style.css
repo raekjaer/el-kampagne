@@ -95,6 +95,16 @@ h1, h2, .newsletter h3 {
   box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);
   background-color: rgba(255,255,255,0.8);
 }
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #c4163f;
+}
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
+  background-color: #c4163f;
+}
+.navbar-toggle.active{
+    background-color: #c4163f !important;
+}
+
 
 .red-btn {
   background: #c4163f;
