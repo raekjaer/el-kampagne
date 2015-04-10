@@ -11,6 +11,10 @@
 */
 
 
+::selection,
+::-moz-selection {
+  background: #c4163f;
+}
 
 body {
   font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important;
