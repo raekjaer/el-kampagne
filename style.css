@@ -142,16 +142,19 @@ h1, h2, .newsletter h3 {
   color: #e96656;
 }
 .our-team .row > div:nth-child(4n+1) .red-border-bottom:before{
-    background: #c4163f;
+  background: #c4163f;
 }
 .our-team .row > div:nth-child(4n+2) .red-border-bottom:before{
-    background: #16c49c;
+  background: #16c49c;
 }
 .our-team .row > div:nth-child(4n+3) .red-border-bottom:before{
-    background: #4416c4;
+  background: #4416c4;
 }
 .our-team .row > div:nth-child(4n+4) .red-border-bottom:before{
-    background: #96c416;
+  background: #96c416;
+}
+.team-member:hover .details {
+  overflow-x: auto;
 }
 
 
