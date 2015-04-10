@@ -181,6 +181,10 @@ h1, h2, .newsletter h3 {
 .feedback-box .client-info .client-name {
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
+.form-control,
+.btn {
+  font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
 
 .purchase-now {
   background: #c4163f;
