@@ -157,6 +157,12 @@ h1, h2, .newsletter h3 {
   overflow-x: auto;
 }
 
+.testimonial {
+  background: #f2eee2;
+}
+.testemonial .white-text {
+  color: #404040;
+}
 
 .feedback-box .client-info .client-name {
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
