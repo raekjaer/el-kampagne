@@ -11,16 +11,18 @@
 */
 
 
-::selection,
-::-moz-selection {
-  background: #c4163f;
-}
-
 body {
   font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important;
 }
 h1, h2, .newsletter h3 {
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+::selection {
+  background: #c4163f;
+}
+::-moz-selection {
+  background: #c4163f;
 }
 
 /*---------------------------------------
@@ -174,7 +176,7 @@ h1, h2, .newsletter h3 {
 .testimonial {
   background: #f2eee2;
 }
-.testemonial .white-text {
+.testimonial .white-text {
   color: #404040;
 }
 
