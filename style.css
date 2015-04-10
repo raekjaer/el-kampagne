@@ -10,8 +10,18 @@
  Tags:          black, gray, red, white, one-column, two-columns, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
 */
 
-/* Red: #c4163f / rgb(196,22,63) */
-/* Green: #16c49c */
+
+::selection,
+::-moz-selection {
+  background: #c4163f;
+}
+
+body {
+  font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important;
+}
+h1, h2, .newsletter h3 {
+  font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
 
 /*---------------------------------------
  **   COLORS                         -----
@@ -85,6 +95,16 @@
   box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);
   background-color: rgba(255,255,255,0.8);
 }
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #c4163f;
+}
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
+  background-color: #c4163f;
+}
+.navbar-toggle.active{
+    background-color: #c4163f !important;
+}
+
 
 .red-btn {
   background: #c4163f;
@@ -136,20 +156,35 @@
   color: #e96656;
 }
 .our-team .row > div:nth-child(4n+1) .red-border-bottom:before{
-    background: #c4163f;
+  background: #c4163f;
 }
 .our-team .row > div:nth-child(4n+2) .red-border-bottom:before{
-    background: #16c49c;
+  background: #16c49c;
 }
 .our-team .row > div:nth-child(4n+3) .red-border-bottom:before{
-    background: #4416c4;
+  background: #4416c4;
 }
 .our-team .row > div:nth-child(4n+4) .red-border-bottom:before{
-    background: #96c416;
+  background: #96c416;
+}
+.team-member:hover .details {
+  overflow-x: auto;
 }
 
+.testimonial {
+  background: #f2eee2;
+}
+.testemonial .white-text {
+  color: #404040;
+}
 
-
+.feedback-box .client-info .client-name {
+  font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+.form-control,
+.btn {
+  font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
 
 .purchase-now {
   background: #c4163f;
