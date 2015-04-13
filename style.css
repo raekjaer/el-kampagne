@@ -25,6 +25,7 @@ h1, h2, .newsletter h3 {
   background: #c4163f;
 }
 
+
 /*---------------------------------------
  **   COLORS                         -----
 -----------------------------------------*/
@@ -90,7 +91,9 @@ h1, h2, .newsletter h3 {
 
 
 .header {
-  background: rgba(196,22,63,.5);
+  background: url(/wp-content/themes/el-kampagne/images/svung-white-large.png) no-repeat 50% bottom rgba(196,22,63,.5);
+  background-size: 100%;
+  box-shadow: none;
 }
 
 #main-nav {
@@ -200,4 +203,13 @@ h1, h2, .newsletter h3 {
 
 .contact-us {
   background: rgba(196,22,63,.5);
+}
+
+#footer { 
+  background: url(/wp-content/themes/el-kampagne/images/svung-red-large.png) no-repeat center bottom white;
+  background-size: 100%;
+  padding-bottom: 250px;
+}
+.copyright {
+  background: transparent;
 }
