@@ -22,6 +22,15 @@ h1, h2, .newsletter h3 {
   font-size: 2em;
 }
 
+a {
+  color: #c4163f;
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
+}
+a:hover {
+  color: #404040;
+}
+
 ::selection {
   background: #c4163f;
 }
@@ -161,8 +170,12 @@ h1, h2, .newsletter h3 {
   background: transparent;
 }
 
+.social li a:hover {
+  color: #c4163f;
+}
+
 .team-member .social-icons ul li a:hover {
-  color: #e96656;
+  color: #c4163f;
 }
 .our-team .row > div:nth-child(4n+1) .red-border-bottom:before{
   background: #c4163f;
