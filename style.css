@@ -17,6 +17,10 @@ body {
 h1, h2, .newsletter h3 {
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
+.entry-title {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
 
 ::selection {
   background: #c4163f;
