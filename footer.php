@@ -91,7 +91,7 @@
 					
 					if( !empty($zerif_email_icon) ) echo '<img src="'.esc_url(__($zerif_email_icon,'zerif-lite')).'">';
 				echo '</div>';
-				echo $zerif_email;
+				echo '<a href="mailto:'.$zerif_email.'">'.$zerif_email.'</a>';
 			echo '</div>';
 		endif;
 		
