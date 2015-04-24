@@ -4,7 +4,7 @@
  Author:       Casper Fryd Rækjær
  Author URI:   http://raekjaer.dk/cv
  Template:     zerif-lite
- Version:      1.0.0
+ Version:      1.0.1
  License:      GNU General Public License version 2
  License URI:  license.txt
  Tags:          black, gray, red, white, one-column, two-columns, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
@@ -32,10 +32,10 @@ a:hover {
 }
 
 ::selection {
-  background: #c4163f;
+  background: #c21b3e;
 }
 ::-moz-selection {
-  background: #c4163f;
+  background: #c21b3e;
 }
 
 
@@ -44,38 +44,38 @@ a:hover {
 -----------------------------------------*/
 /** BACKGROUNDS **/
 .red-bg {
-  background: #c4163f;
+  background: #c21b3e;
 }
 .green-bg {
-  background: #16c49c;
+  background: #f7f3e8;
 }
 .blue-bg {
-  background: #4416c4;
+  background: #6f7072;
 }
 .yellow-bg {
-  background: #96c416;
+  background: #f7f3e8;
 }
 .dark-bg {
-  background: #2b0000;
+  background: #6f7072;
 }
 .white-bg {
   background:  #ffffff;
 }
 /** FOR TEXTS AND ICON FONTS **/
 .red-text {
-  color: #c4163f;
+  color: #c21b3e;
 }
 .green-text {
-  color: #16c49c;
+  color: #f7f3e8;
 }
 .blue-text {
-  color: #4416c4;
+  color: #6f7072;
 }
 .yellow-text {
-  color: #96c416;
+  color: #f7f3e8;
 }
 .dark-text {
-  color: #2b0000;
+  color: #6f7072;
 }
 .white-text {
   color: #ffffff;
@@ -84,28 +84,33 @@ a:hover {
  **   BORDER BOTTOMS                 -----
 -----------------------------------------*/
 .white-border-bottom:before {
-  background: #fbffff;
+  background: #ffffff;
 }
 .dark-border-bottom:before {
-  background: #2b0000;
+  background: #6f7072;
 }
 .red-border-bottom:before {
-  background: #c4163f;
+  background: #c21b3e;
 }
 .green-border-bottom:before {
-  background: #16c49c;
+  background: #f7f3e8;
 }
 .blue-border-bottom:before {
-  background: #4416c4;
+  background: #6f7072;
 }
 .yellow-border-bottom:before {
-  background: #96c416;
+  background: #f7f3e8;
 }
 
 
 .header {
-  background: url(/wp-content/themes/el-kampagne/images/svung-white-large.png) no-repeat 50% bottom rgba(196,22,63,.5);
+  background: url(/wp-content/themes/el-kampagne/images/svung-white-large.png) no-repeat 50% bottom rgba(194,27,62,.5);
   background-size: 100%;
+  box-shadow: none;
+}
+.header-content-wrap {
+  background: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -114,48 +119,53 @@ a:hover {
   background-color: rgba(255,255,255,0.8);
 }
 .navbar-inverse .navbar-nav>li>a:hover {
-  color: #c4163f;
+  color: #c21b3e;
 }
 .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
-  background-color: #c4163f;
+  background-color: #c21b3e;
 }
 .navbar-toggle.active{
-    background-color: #c4163f !important;
+    background-color: #c21b3e !important;
 }
 
-
+/* BUTTONS */
 .red-btn {
-  background: #c4163f;
+  background: #c21b3e;
 }
 .red-btn:hover {
-  background: #f2446d;
+  background: rgba(194,27,62,.6);
+}
+.purchase-now .red-btn {
+  background: #6f7072;
+}
+.purchase-now .red-btn:hover {
+  background: rgba(111,112,114,.6);
 }
 .green-btn {
-  background: #009169;
+  background: #6f7072;
 }
 .green-btn:hover {
-  background: #16c49c;
+  background: rgba(111,112,114,.6);
 }
-
 .separator-one .green-btn {
-  background: #009169;
+  background: #6f7072;
 }
 .separator-one .green-btn:hover {
-  background: #16c49c;
+  background: rgba(111,112,114,.6);
 }
 
 /* Red,green,blue,yellow circle borders and backgrounds */
 .ctUp-ads:nth-child(n+1) .service-icon:hover, .focus-box:nth-child(n+1) .service-icon:hover {
-  border: 10px solid #c4163f;
+  border: 10px solid #c21b3e;
 }
 .ctUp-ads:nth-child(2n+1) .service-icon:hover, .focus-box:nth-child(2n+1) .service-icon:hover{
-  border: 10px solid #16c49c;
+  border: 10px solid #f7f3e8;
 }
 .ctUp-ads:nth-child(3) .service-icon:hover, .focus-box:nth-child(3) .service-icon:hover {
-  border: 10px solid #4416c4;
+  border: 10px solid #6f7072;
 }
 .ctUp-ads:nth-child(4) .service-icon:hover, .focus-box:nth-child(4) .service-icon:hover{
-  border: 10px solid #96c416;
+  border: 10px solid #f7f3e8;
 }
 .ctUp-ads:nth-child(1) .red-border-bottom:before, .focus-box:nth-child(1) .red-border-bottom:hover {
   background: transparent;
@@ -178,26 +188,26 @@ a:hover {
   color: #c4163f;
 }
 .our-team .row > div:nth-child(4n+1) .red-border-bottom:before{
-  background: #c4163f;
+  background: #c21b3e;
 }
 .our-team .row > div:nth-child(4n+2) .red-border-bottom:before{
-  background: #16c49c;
+  background: #f7f3e8;
 }
 .our-team .row > div:nth-child(4n+3) .red-border-bottom:before{
-  background: #4416c4;
+  background: #6f7072;
 }
 .our-team .row > div:nth-child(4n+4) .red-border-bottom:before{
-  background: #96c416;
+  background: #f7f3e8;
 }
 .team-member:hover .details {
   overflow-x: auto;
 }
 
 .testimonial {
-  background: #f2eee2;
+  background: #f7f3e8;
 }
 .testimonial .white-text {
-  color: #404040;
+  color: #6f7072;
 }
 
 .feedback-box .client-info .client-name {
@@ -208,14 +218,12 @@ a:hover {
   font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
+/* SEPARATORS */
+.separator-one {
+  background: rgba(194,27,62,.5);
+}
 .purchase-now {
-  background: #c4163f;
-}
-.purchase-now .red-btn {
-  background: #707070;
-}
-.purchase-now .red-btn:hover {
-  background: #a0a0a0;
+  background: #c21b3e;
 }
 
 .contact-us {
