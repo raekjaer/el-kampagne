@@ -194,10 +194,6 @@ a:hover {
   font-weight: normal;
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
-.team-member .details {
-  color: #ffffff;
-  background: #c21b3e;
-}
 
 .team-member .social-icons ul li a:hover {
   color: #c21b3e;
@@ -215,6 +211,8 @@ a:hover {
   background: #6f7072;
 }
 .team-member:hover .details {
+  color: #ffffff;
+  background: #c21b3e;
   overflow-x: auto;
 }
 
