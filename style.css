@@ -262,3 +262,13 @@ a:hover {
 .zerif-copyright:hover {
   color: #6f7072 !important;
 }
+.el-kampagne-copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  right: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  text-align: right;
+}
