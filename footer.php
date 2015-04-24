@@ -134,22 +134,21 @@
 						if( !empty($zerif_socials_dribbble) ):
 							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_dribbble,'zerif-lite')).'"><i class="fa fa-dribbble"></i></a></li>';
 						endif;
-						/* dribbble */
+						/* website */
 						if( !empty($el_kampagne_socials_website) ):
 							echo '<li><a target="_blank" href="'.esc_url(__($el_kampagne_socials_website,'el-kampagne')).'"><i class="fa fa-globe"></i></a></li>';
 						endif;
 						echo '</ul>';
 					endif;	
-			
-			
-					if( !empty($zerif_copyright) ):
-						echo esc_attr($zerif_copyright);
-					endif;
-					
+								
 					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="https://github.com/raekjaer/el-kampagne" target="_blank" rel="nofollow">EL kampagne </a>'.__('powered by','el-kampagne').'<a class="zerif-copyright" href="http://wordpress.org/" target="_blank" rel="nofollow"> WordPress</a> '.__('and','el-kampagne').' <a class="zerif-copyright" href="https://themeisle.com/themes/zerif-lite/" target="_blank" rel="nofollow">Zerif Lite</a></div>';
 					
 					echo '</div>';
-			
+
+					if( !empty($zerif_copyright) ):
+						echo '<div class="el-kampagne-copyright">'.esc_attr($zerif_copyright).'</div>';
+					endif;
+
 		endif;
 	?>
 
