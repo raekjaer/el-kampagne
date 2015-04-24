@@ -104,9 +104,11 @@ a:hover {
   background: #f7f3e8;
 }
 
-
+.el-icon {
+  margin-right: 15px;
+}
 .header {
-  background: url(/wp-content/themes/el-kampagne/images/svung-white-large.png) no-repeat 50% bottom rgba(194,27,62,.5);
+  background: url(/wp-content/themes/el-kampagne/images/svung-hvid.svg) no-repeat 50% bottom rgba(194,27,62,.5);
   background-size: 100%;
   box-shadow: none;
 }
@@ -220,7 +222,10 @@ a:hover {
 }
 
 .feedback-box .message {
+  min-height: 60px;
+  padding-left: 60px;
   color: #6f7072;
+  background: url(/wp-content/themes/el-kampagne/images/ikon_citat.png) no-repeat left top;
 }
 .feedback-box .client-info .client-name {
   font-weight: normal;
@@ -239,15 +244,18 @@ a:hover {
 .purchase-now {
   background: #c21b3e;
 }
+.purchase-now h3 {
+  margin-top: 0;
+}
 
 .contact-us {
   background: rgba(196,22,63,.5);
 }
 
 #footer { 
-  background: url(/wp-content/themes/el-kampagne/images/svung-red-large.png) no-repeat center bottom white;
+  background: url(/wp-content/themes/el-kampagne/images/svung-roed.svg) no-repeat center bottom white;
   background-size: 100%;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 .company-details {
   color: #6f7072;
@@ -263,12 +271,38 @@ a:hover {
   color: #6f7072 !important;
 }
 .el-kampagne-copyright {
-  position: absolute;
-  width: 100%;
-  bottom: 15px;
-  right: 15px;
-  font-size: 16px;
+  clear: both;
+  min-height: 80px;
+  margin-top: 60px;
+  color: #000000;
+  background: url(/wp-content/themes/el-kampagne/images/ikon_logo.png) no-repeat center bottom;
+  font-size: 20px;
   font-weight: normal;
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-  text-align: right;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+/*  .copyright {
+    width: 25% !important;
+  }
+*/  .el-kampagne-copyright {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    min-height: 45px;
+    margin-top: 0;
+    padding-right: 60px;
+    color: #ffffff;
+    background: url(/wp-content/themes/el-kampagne/images/ikon_logo_neg.png) no-repeat right center;
+    line-height: 45px;
+    text-align: right;  
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .copyright {
+    width: 25% !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }

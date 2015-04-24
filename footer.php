@@ -144,17 +144,15 @@
 					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="https://github.com/raekjaer/el-kampagne" target="_blank" rel="nofollow">EL kampagne </a>'.__('powered by','el-kampagne').'<a class="zerif-copyright" href="http://wordpress.org/" target="_blank" rel="nofollow"> WordPress</a> '.__('and','el-kampagne').' <a class="zerif-copyright" href="https://themeisle.com/themes/zerif-lite/" target="_blank" rel="nofollow">Zerif Lite</a></div>';
 					
 					echo '</div>';
-			
+
+					if( !empty($zerif_copyright) ):
+						echo '<div class="el-kampagne-copyright">'.esc_attr($zerif_copyright).'</div>';
+					endif;
+
 		endif;
 	?>
 
 </div> <!-- / END CONTAINER -->
-
-<?php
-	if( !empty($zerif_copyright) ):
-		echo '<div class="el-kampagne-copyright white-text"><div class="container">'.esc_attr($zerif_copyright).'</div></div>';
-	endif;
-?>
 
 </footer> <!-- / END FOOOTER  -->
 
