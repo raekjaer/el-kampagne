@@ -13,8 +13,10 @@
 
 body {
   font-family: "Soho W02 Light","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important;
+  color: #6f7072;
 }
 h1, h2, .newsletter h3 {
+  font-weight: normal;
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .entry-title {
@@ -23,12 +25,12 @@ h1, h2, .newsletter h3 {
 }
 
 a {
-  color: #c4163f;
+  color: #c21b3e;
   -webkit-transition: all 700ms;
   transition: all 700ms;
 }
 a:hover {
-  color: #404040;
+  color: #6f7072;
 }
 
 ::selection {
@@ -181,11 +183,18 @@ a:hover {
 }
 
 .social li a:hover {
-  color: #c4163f;
+  color: #c21b3e;
+}
+
+.focus-box h5,
+.team-member h5 {
+  color: #6f7072;
+  font-weight: normal;
+  font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
 .team-member .social-icons ul li a:hover {
-  color: #c4163f;
+  color: #c21b3e;
 }
 .our-team .row > div:nth-child(4n+1) .red-border-bottom:before{
   background: #c21b3e;
@@ -210,8 +219,13 @@ a:hover {
   color: #6f7072;
 }
 
+.feedback-box .message {
+  color: #6f7072;
+}
 .feedback-box .client-info .client-name {
+  font-weight: normal;
   font-family: "Soho W02 Bold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  color: #6f7072;
 }
 .form-control,
 .btn {
@@ -235,6 +249,16 @@ a:hover {
   background-size: 100%;
   padding-bottom: 250px;
 }
+.company-details {
+  color: #6f7072;
+}
 .copyright {
+  color: #6f7072;
   background: transparent;
+}
+.zerif-copyright {
+  color: #c21b3e !important;
+}
+.zerif-copyright:hover {
+  color: #6f7072 !important;
 }
