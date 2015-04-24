@@ -110,7 +110,7 @@ a:hover {
 .header {
 /*  background: url(/wp-content/themes/el-kampagne/images/svung-hvid.svg) no-repeat 50% bottom rgba(194,27,62,.5);
   background-size: 100%;*/
-  background: none;
+  background: rgba(194,27,62,.5);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
